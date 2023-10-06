@@ -4,6 +4,9 @@
 <title>Hidden riches</title>
 <h2>Find the treasure by Sneha Kancharla</h2>
 <style>
+       h2 {
+        text-shadow: 2px 2px 7px lightseagreen;
+       }
         #locations {
             color: rgb(255, 94, 0);
             cursor: grab;
@@ -29,11 +32,39 @@
             font-weight: 300;
             padding: 3px;
             border: 1px solid lightseagreen;
-            background-color: lightyellow;    
+            background-color:antiquewhite;    
         }
         body {
             font-family: Arial, Helvetica, sans-serif;
             background-color:aliceblue;
+            text-align: center;
+        }
+        .game-field {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 5px;
+            margin: 4px auto;
+            width: 20%;
+         }
+         .location {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #000;
+            background-color: #fff;
+            text-align: center;
+            background-image: url('./treasure\ location.jpg');
+            background-size: cover;
+        }
+        .treasure {
+            background-image: url('./treasure.jpg'); 
+        }
+
+        .trap {
+            background-image: url('./treasure\ trap.jpg');
+        }
+
+        .pirate-related {
+            background-image: url('./bones.jpg'); 
         }
 </style>
 </head>
@@ -51,6 +82,41 @@
     <div id="help">
         <p>Help report</p>
     </div>
+    <div class="game-field">
+
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+    
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+    
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+    
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+        <div class="location"></div>
+    </div>
+   
+        
+    
 </body>
 
 </html>
